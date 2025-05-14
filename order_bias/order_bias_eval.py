@@ -5,17 +5,18 @@ import pandas as pd
 from tqdm import tqdm
 
 # === CONFIG ===
-backend = "openai"  # options: "openai", "anthropic", "ollama"
-chosen_model = "gpt-4o-mini"
+backend = "ollama"  # options: "openai", "anthropic", "ollama"
+chosen_model = "llama3.2" #"gpt-4o-mini"
 open_ai_api_key = ""
 anthropic_api_key = ""
-input_csv = "data/mmlu_EN-US_balanced.csv"
+input_csv = "data/mmlu_ZH-CN_balanced.csv"
 output_csv = f"output/order_bias_{chosen_model.replace(':', '_').replace('/', '_')}.csv"
-max_examples = 5
+max_examples = 25
 
 print(chosen_model)
 
 # === PROMPT TEMPLATE ===
+# The Prompt is from here: https://github.com/openai/simple-evals/blob/main/common.py
 QUERY_TEMPLATE = """
 Answer the following multiple choice question. The last line of your response should be of the following format: 'Answer: $LETTER' (without quotes) where LETTER is one of ABCD. Think step by step before answering.
 
