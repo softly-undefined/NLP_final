@@ -5,14 +5,15 @@ import pandas as pd
 from tqdm import tqdm
 
 # === CONFIG ===
-backend = "ollama"  # options: "openai", "anthropic", "ollama"
-chosen_model = "llama3.2" #"gpt-4o-mini"
+backend = "openai"  # options: "openai", "anthropic", "ollama"
+chosen_model = "gpt-4o" #"gpt-4o-mini"
 open_ai_api_key = ""
 anthropic_api_key = ""
-input_csv = "data/mmlu_ZH-CN_balanced.csv"
-output_csv = f"output/order_bias_{chosen_model.replace(':', '_').replace('/', '_')}.csv"
-max_examples = 25
+input_csv = "data/mmlu_EN-US_balanced.csv"
+output_csv = f"output/order_bias_{chosen_model.replace(':', '_').replace('/', '_')}_en.csv"
+max_examples = 2000
 
+print(input_csv)
 print(chosen_model)
 
 # === PROMPT TEMPLATE ===
@@ -104,7 +105,7 @@ else:
     raise ValueError(f"Unsupported backend: {backend}")
 
 # === LOAD DATA ===
-df = pd.read_csv(input_csv).head(max_examples)
+df = pd.read_csv(input_csv)#.head(max_examples)
 
 # === RUN ORDER-BIAS EVAL ===
 results = []
@@ -158,4 +159,4 @@ for idx, row in tqdm(df.iterrows(), total=len(df), desc=f"Order-bias eval ({back
 # === SAVE RESULTS ===
 out_df = pd.DataFrame(results)
 out_df.to_csv(output_csv, index=False)
-print(f"✅ Saved order-bias results to {output_csv}")
+print(f"Saved order-bias results to {output_csv}")
