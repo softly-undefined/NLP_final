@@ -1,3 +1,4 @@
+
 import os
 import re
 import pandas as pd
@@ -10,7 +11,9 @@ open_ai_api_key = ""
 anthropic_api_key = ""
 input_csv = "data/mmlu_EN-US_balanced.csv"
 output_csv = f"output/order_bias_{chosen_model.replace(':', '_').replace('/', '_')}_dir_en.csv"
+error_log_path = "output/3errors.txt"
 max_examples = 2000
+save_every = 200
 
 print(input_csv)
 print(chosen_model)
@@ -107,7 +110,11 @@ elif backend == "ollama":
         def __init__(self, model="llama3.1", temperature=0):
             self.model = model
             self.temperature = temperature
-            self.client = ChatOllama(model=self.model, temperature=self.temperature)
+            self.client = ChatOllama(
+                            model=self.model,
+                            temperature=self.temperature,
+                            num_predict=512,
+                        )
 
         def prompt(self, prompt):
             try:
@@ -125,8 +132,17 @@ else:
 # === LOAD DATA ===
 df = pd.read_csv(input_csv)#.head(max_examples)
 
+# === LOAD EXISTING PROGRESS IF AVAILABLE ===
+if os.path.exists(output_csv):
+    existing = pd.read_csv(output_csv)
+    done_keys = set((r["OriginalIndex"], r["RotationPosition"]) for _, r in existing.iterrows())
+    results = existing.to_dict("records")
+    print(f"Resuming from {len(done_keys)} completed prompts...")
+else:
+    done_keys = set()
+    results = []
+
 # === RUN ORDER-BIAS EVAL ===
-results = []
 for idx, row in tqdm(df.iterrows(), total=len(df), desc=f"Order-bias eval ({backend})"):
     orig_correct = row["Answer"].strip()
     correct_text = row[orig_correct]
@@ -134,13 +150,15 @@ for idx, row in tqdm(df.iterrows(), total=len(df), desc=f"Order-bias eval ({back
     other_texts = [row[l] for l in other_labels]
 
     for target in ["A", "B", "C", "D"]:
-        # build new choice mapping
+        key = (idx, target)
+        if key in done_keys:
+            continue  # Skip already processed
+
         new = {}
         oth_iter = iter(other_texts)
         for label in ["A", "B", "C", "D"]:
             new[label] = correct_text if label == target else next(oth_iter)
 
-        # format prompt
         prompt = QUERY_TEMPLATE.format(
             Question=row["Question"],
             A=new["A"],
@@ -149,11 +167,17 @@ for idx, row in tqdm(df.iterrows(), total=len(df), desc=f"Order-bias eval ({back
             D=new["D"]
         )
 
-        # get response and extract prediction
         out = translator.prompt(prompt)
         pred = extract_answer_from_output(out)
 
-        # record
+        if pred in ["Invalid", "Error"]:
+            os.makedirs(os.path.dirname(error_log_path), exist_ok=True)
+            with open(error_log_path, "a", encoding="utf-8") as f:
+                f.write(f"\n[Failure] idx={idx}, target={target}\n")
+                f.write(f"Prompt:\n{prompt}\n")
+                f.write(f"Output:\n{out}\n")
+                f.write("-" * 80 + "\n")
+
         results.append({
             "OriginalIndex": idx,
             "RotationPosition": target,
@@ -169,7 +193,11 @@ for idx, row in tqdm(df.iterrows(), total=len(df), desc=f"Order-bias eval ({back
             "Subcategory": row.get("Subcategory", "")
         })
 
+        if len(results) % save_every == 0:
+            pd.DataFrame(results).to_csv(output_csv, index=False)
+            print(f"[Checkpoint] Saved {len(results)} entries so far...")
+
 # === SAVE RESULTS ===
-out_df = pd.DataFrame(results)
-out_df.to_csv(output_csv, index=False)
-print(f"Saved order-bias results to {output_csv}")
+# Final save
+pd.DataFrame(results).to_csv(output_csv, index=False)
+print(f"Final save completed: {len(results)} entries written to {output_csv}")
