@@ -3,6 +3,8 @@ import pandas as pd
 from tqdm import tqdm
 import matplotlib.pyplot as plt
 
+# this code can be made as a subset of our other stuff
+
 # === CONFIG ===
 backend = "ollama"  # options: "openai", "anthropic", "ollama"
 chosen_model = "llama3.2"  # or other model names depending on backend
