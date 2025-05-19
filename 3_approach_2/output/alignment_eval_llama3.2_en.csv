@@ -1,31 +1,201 @@
 OriginalIndex,Predicted,CorrectAnswer,SimilarityScores,FreeResponse,A,B,C,D,Question,Subject,Subcategory
-0,D,B,"[0.5124162435531616, 0.5234102606773376, 0.4348699450492859, 0.5485615134239197]","This similarity suggests a common ancestor between humans and chimpanzees, indicating they shared a recent evolutionary history.",humans and dogs are more closely related than humans and chimpanzees,humans and chimpanzees are more closely related than humans and dogs,humans are related to chimpanzees but not to dogs,humans and chimpanzees are closely analogous,The sequence of amino acids in hemoglobin molecules of humans is more similar to the hemoglobin of chimpanzees than it is to the hemoglobin of dogs. This similarity suggests that,high_school_biology,biology
-1,D,A,"[0.1585541069507599, 0.3037950098514557, 0.27781587839126587, 0.3329625725746155]","The embryologist could conclude that the vertebrate organism develops from a single fertilized egg (zygote) through multiple cell divisions, differentiation, and organization into distinct tissues and organs.",Ontogeny recapitulates phylogeny.,"Early embryos display identical features of their class, order, and species.",An early human embryo has features in common with early fish and avian embryos.,A human embryo displays features of adult fish and birds in the course of its development.,An embryologist studying the development of a vertebrate organism from the zygote stage to fetus would be justified in drawing which of the following conclusions?,college_biology,biology
-2,D,D,"[0.08647031337022781, 0.08992502093315125, 0.14235293865203857, 0.2529201805591583]",Genetic mutations.,the potential mates experience geographic isolation,the potential mates experience behavioral isolation,the potential mates have different courtship rituals,the potential mates have similar breeding seasons,All of the following are examples of events that can prevent interspecific breeding EXCEPT,high_school_biology,biology
-3,C,A,"[0.06558205187320709, 0.2712106704711914, 0.3103558123111725, 0.2895123362541199]","The statement that apoptosis is ""NOT correct"" implies there's an error to be identified among the options provided. However, without specific options to evaluate, I can provide general information on apoptosis:
+1100,B,B,"[0.4671703577041626, 0.7912782430648804, 0.6630629301071167, 0.08441486209630966]",Abelian group.,commutative semi group,abelian group,non-abelian group,None of these,"If (G, .) is a group such that (ab)^-1 = a^-1b^-1, for all a, b in G, then G is a/an",abstract_algebra,math
+1101,B,D,"[0.2188647836446762, 0.23992130160331726, 0.21627746522426605, 0.21552281081676483]","The statement that is false is: ""All elements in set X are also in set Y.""
 
-Apoptosis is indeed a crucial process in living organisms for maintaining tissue homeostasis and preventing cancer. It involves a series of cellular changes leading to cell death, which is regulated by various signaling pathways.
+This is because 45 and 55 are in set X but not in set Y.",The sets have identical medians.,The sets have identical means.,The sets have identical ranges.,None of the above are false.,"Consider the two sets X = {10, 30, 45, 50, 55, 70, 90} and Y = {10, 30, 35, 50, 65, 70, 90}. Which of the following is false?",high_school_statistics,math
+1102,B,B,"[0.2199760228395462, 0.24927927553653717, 0.23516888916492462, 0.22267037630081177]",The gas station sold approximately 300.58 gallons of gas.,300,300.58,300.585,300.59,"A gas station sold 300.5849 gallons of gas in a day. How many gallons of gas did the gas station sell, rounded to the nearest hundredth?",elementary_mathematics,math
+1103,A,B,"[0.16763059794902802, 0.15511365234851837, 0.07066740095615387, 0.10388913750648499]","The perimeter of the triangle is given by $6 + b + c = 18.$ Since it's a right triangle, we can use the Pythagorean theorem: $a^2 + b^2 = c^2,$ where $a$ and $b$ are the legs. In this case, $a=6$, so we have:
 
-Common misconceptions or incorrect statements about apoptosis might include:
+$$36+b^2=c^2\Rightarrow 36+c^2=18-c\Rightarrow c^2+18c-36=0.$$
 
-1. Apoptosis is always harmful: While excessive apoptosis can lead to tissue damage, it's also necessary for eliminating damaged cells.
-2. Apoptosis is the same as necrosis: Necrosis is a form of cell death that results from acute cellular injury and is not regulated by the same pathways as apoptosis.
+We can factor this as $(c+18)(c-2)=0,$ which gives us two possible values for $c$: $c=-18$ and $c=2$. Since the length of a side cannot be negative, we must have $c=2$, so $\boxed{c=2}.$",18,\frac{15}{2},8,6,"A right triangle has legs of length $6$ and $b$, and a hypotenuse of length $c$. The perimeter of the triangle is $18$. Compute $c$.",high_school_mathematics,math
+1104,D,A,"[0.11192339658737183, 0.1572849154472351, 0.1137031838297844, 0.27232465147972107]","To find the probability that at least half of John's 5 children are girls, we need to consider the cases where there are 3 or more girls.
 
-Without specific options to evaluate, I cannot provide a definitive answer. If you have specific statements about apoptosis you'd like me to assess for accuracy, please provide them.",It occurs randomly.,A particular cell dies when it is no longer needed by the organism.,A cell carries out apoptosis when too many mutations have accumulated.,Plant cells carry out apoptosis as a defense measure in cells that have been infected by parasites.,"Apoptosis, which is programmed cell death, is a necessary process in living organisms. Which of the following is NOT correct about apoptosis?",high_school_biology,biology
-4,C,B,"[0.10463513433933258, 0.07945217937231064, 0.351086288690567, 0.12317342311143875]",The observation supports the idea that natural selection can favor traits that are initially maladaptive if they become beneficial in a specific environment.,Evolution is progressive and tends toward a more perfect population.,Phenotype is often the result of compromise.,Natural selection reduces the frequency of maladaptive genes in populations over the course of time.,"Polygenic inheritance is generally maladaptive, and should become less common in future generations.","The same gene that causes various coat patterns in wild and domesticated cats also causes the cross-eyed condition in these cats, the cross-eyed condition being slightly maladaptive. In a hypothetical environment, the coat pattern that is associated with crossed eyes is highly adaptive, with the result that both the coat pattern and the cross-eyed condition increase in a feline population over time. Which statement is supported by these observations?",high_school_biology,biology
-5,D,C,"[0.04400679096579552, 0.08090098202228546, 0.09728178381919861, 0.13570119440555573]","I don't see any information provided about a pedigree. Please provide the details, and I'll be happy to help you determine which statement is supported by the information.",The P generation mother is X-X.,The P generation father is X-Y.,"If parents 1 and 2 in row II have another child, the chance that the child would be afflicted with alkaptonuria is 25%.",The genotype of woman 1 is X-X.,Which of the following statement is supported by the information given in the pedigree?,high_school_biology,biology
-6,A,C,"[0.3927000164985657, 0.35327431559562683, 0.31453317403793335, 0.3129359185695648]","The complementary RNA (rRNA) sequence to 5'-C-A-T-3' is 5'-G-U-C-3'. 
+There are 2^5 = 32 possible outcomes (each child can be either a boy or a girl).
 
-Since tRNA pairs with an mRNA codon, and the mRNA codon is complementary to the rRNA sequence, we need to find the complementary sequence of 5'-G-U-C-3'.
+The number of ways to have exactly 3 girls is C(5,3) = 10.
+The number of ways to have exactly 4 girls is C(5,4) = 5.
+The number of ways to have all 5 girls is C(5,5) = 1.
 
-The complementary sequence of 5'-G-U-C-3' is 5'-A-C-G-3', which is the anticodon sequence of tRNA.",5â€²-G-T-A-3â€²,5â€²-G-U-A-3â€²,5â€²-C-A-U-3â€²,5-â€²U-A-C-3â€²,The nucleotide sequence of a DNA molecule is 5â€²-C-A-T-3â€². A mRNA molecule with a complementary codon is transcribed from the DNA in the process of protein synthesis a tRNA pairs with a mRNA codon. What is the nucleotide sequence of the tRNA anticodon?,high_school_biology,biology
-7,B,C,"[0.149971604347229, 0.5538381338119507, 0.3699772357940674, 0.4547461271286011]","Cyanobacteria and green unicellular algae are distinct in several ways:
+So, the total number of favorable outcomes is 10 + 5 + 1 = 16.
 
-1. Cell wall structure: Cyanobacteria have a peptidoglycan cell wall, while green unicellular algae have a cellulose-based cell wall.
-2. Chlorophyll content: Cyanobacteria contain chlorophyll a and b, but not the accessory pigments found in green unicellular algae.
-3. Photosynthetic pathway: Cyanobacteria use the Calvin-Benson cycle, whereas green unicellular algae use the C4 photosynthetic pathway or the Crassulacean acid metabolism (CAM) pathway.
-4. Nutrient requirements: Cyanobacteria are autotrophic and can fix nitrogen, while green unicellular algae are heterotrophic and require organic nutrients.
+Therefore, the probability that at least half of John's children are girls is 16/32 = 1/2.",\frac{1}{2},\frac{1}{4},\frac{1}{8},\frac{3}{5},"John has five children. What is the probability that at least half of them are girls? (We can assume a boy is equally likely to be born as is a girl, and vice-versa.)",high_school_mathematics,math
+1105,A,D,"[0.3880632519721985, 0.2166084349155426, 0.2625959515571594, 0.35466086864471436]","The fractions that are greater than 2/5 are:
 
-These differences reflect distinct evolutionary paths and adaptations to their environments.",Cyanobacteria reduce sulfur compounds.,Cyanobacteria lack cell walls.,Cyanobacteria have no nuclei.,Green algae produce cell membranes.,How do cyanobacteria differ from green unicellular algae?,college_biology,biology
-8,C,D,"[0.33524250984191895, 0.4846503734588623, 0.5073341727256775, 0.48265233635902405]","The soap helps submerge the leaf disks by reducing the surface tension of the water, allowing it to penetrate more easily between the leaf's cells and the beaker's sides. This creates a larger contact area, enabling the leaves to float or remain submerged with less effort.",The soap molecules enter through the stomata of the leaf and bond to oxygen molecules.,The soap molecules bond to air bubbles on the surface of the leaf and remove them.,"The soap molecules decrease the pH of the water, allowing excess H+ to bond to the leaf surface.","The hydrophobic regions of the soap molecules attach to the waxy leaf surface, while the hydrophilic regions form hydrogen bonds with the water molecules.","In a laboratory exercise, a student cuts disks of plant leaves and puts them in a beaker of water. To help submerge the leaves, a drop of soap is added to the water. How does the soap help submerge the leaf disks?",high_school_biology,biology
-9,D,A,"[0.07883159816265106, 0.05242503434419632, 0.11311522126197815, 0.16633421182632446]","The answer is: Bone. Connective tissue includes types like bone, cartilage, fat, and blood vessels, but not bone itself (bone is a type of connective tissue).",thrombin,glycosaminoglycans,collagens,fibroblasts,All of the following might be found in connective tissue EXCEPT,college_biology,biology
+* 3/5
+* 4/5
+* 5/5 (or 1)
+* Any fraction with a numerator greater than 2 and the same denominator (e.g. 3/5, 4/5, etc.)
+
+So, there are multiple fractions that are greater than 2/5.",1 over 5,1 over 10,4 over 10,5 over 10,Which fraction is greater than 2 over 5?,elementary_mathematics,math
+1106,D,B,"[0.11688634008169174, 0.13416831195354462, 0.09865619242191315, 0.14633403718471527]","To find the probability that Joe eats at least 2 different kinds of fruit, we can use complementary counting.
+
+The probability that Joe eats only one kind of fruit (e.g., apples) on all three meals is:
+
+(1/3)^3 = 1/27 for each type of fruit
+Since there are 3 types of fruit, the total probability is:
+3 x 1/27 = 1/9
+
+So, the probability that Joe eats at least two different kinds of fruit is:
+1 - 1/9 = 8/9",\frac{7}{9},\frac{8}{9},\frac{5}{9},\frac{9}{11},"At breakfast, lunch, and dinner, Joe randomly chooses with equal probabilities either an apple, an orange, or a banana to eat. On a given day, what is the probability that Joe will eat at least two different kinds of fruit?",high_school_mathematics,math
+1107,D,D,"[0.01361432671546936, 0.2224084585905075, -0.03283727541565895, 0.26538756489753723]","The distance traveled by the ant is the sum of the distances between (-4, 6) and (0, 0), and (0, 0) and (4, 3). 
+
+Using the Pythagorean theorem for each segment:
+
+Distance from (-4, 6) to (0, 0) = √((-4)^2 + 6^2) = √(16 + 36) = √52
+Distance from (0, 0) to (4, 3) = √((4-0)^2 + (3-0)^2) = √(16+9) = √25
+
+Total distance traveled by the ant is √52 + √25.",16,2\sqrt{2},5,5+2\sqrt{13},"An ant crawls straight from $(-4,6)$ to the origin, and then continues straight on to $(4,3)$. How far does it travel?",high_school_mathematics,math
+1108,B,A,"[0.4415292739868164, 0.5089952945709229, 0.4965364634990692, 0.506218671798706]","Here are the concise answers:
+
+1. True (Lagrange's theorem)
+2. False (it can be either, but not necessarily)","True, True","False, False","True, False","False, True","Statement 1 | If H and K are subgroups of a group G, then |HK| = |H||K|/|H intersection K|. Statement 2 | A group of order 2p where p is an odd prime is cyclic or isomorphic to D_p.",abstract_algebra,math
+1109,D,C,"[0.38328999280929565, 0.3884832262992859, 0.35846126079559326, 0.39914995431900024]","To maintain proportion, the ratio of width to length remains the same. 
+
+Original: 4 cm / 6 cm = 2/3
+New: 10 cm / x = 2/3
+
+x = (2/3) * 10 cm = 20/3 cm ≈ 6.67 cm",8 cm,12 cm,15 cm,20 cm,"Miranda enlarged a picture proportionally. Her original picture is 4 cm wide and 6 cm long. If the new, larger picture is 10 cm wide, what is its length?",elementary_mathematics,math
+1110,A,B,"[0.12057633697986603, 0.06804381310939789, 0.08554631471633911, 0.05576298013329506]","To ensure no student is teammates with someone they dislike, we can create a graph where each student is a node and an edge connects two nodes if they dislike each other. Since each student dislikes three classmates, they will have 3 edges.
+
+The minimum number of teams required to isolate each student from their disliked classmates is the chromatic number of the graph. In this case, since each student has 3 dislikes, we can color the graph with 4 colors (one for each dislike). Therefore, at least 4 teams must be created.",4,7,10,13,"A large class is to be divided into teams and each student must be a member of exactly one team. However, each student dislikes three of their classmates. Dislike between students need not be mutual. If the teams do not need to be equally sized, how many must be created so that no student is the teammate of someone they dislike?",college_mathematics,math
+1111,B,D,"[0.08601076900959015, 0.10513202846050262, 0.07587473094463348, -0.08847929537296295]","A census is typically used for:
+
+* Collecting demographic data from a population
+* Conducting a count or survey of a specific group (e.g., a city, country, or organization)
+* Gathering information about a defined population's characteristics, such as age, income, and occupation.
+
+In general, a census is used when you need to gather comprehensive data from a specific group or population.",A 95% confidence interval of mean height of teachers in a small town.,A 95% confidence interval of the proportion of students in a small town who are taking some AP class.,A two-tailed hypothesis test where the null hypothesis was that the mean expenditure on entertainment by male students at a high school is the same as that of female students.,None of the above.,For which of the following is it appropriate to use a census?,high_school_statistics,math
+1112,A,D,"[0.20391911268234253, 0.16622129082679749, 0.13645800948143005, 0.14879488945007324]","To solve this problem, we need to use conditional probability.
+
+Let's define the events:
+
+A = Going to a 4-year college
+B = Not going to a 2-year college (i.e., going to a 4-year or employment)
+
+We are given:
+P(A) = 54% = 0.54
+P(B) = P(not going to a 2-year college) = 1 - P(going to a 2-year college) = 1 - 20% = 80% = 0.8
+
+We want to find P(A|B), the probability of going to a 4-year college given that we are not going to a 2-year college.
+
+Using Bayes' theorem:
+
+P(A|B) = P(B|A) \* P(A) / P(B)
+= (54% / 100%) \* 0.54 / 0.8
+= 0.54 \* 0.54 / 0.8
+= 0.29125
+
+So, the probability that a randomly selected student who is not going on to a 2-year college will be going on to a 4-year college is approximately 29.125%.",0.460,0.540,0.630,0.675,"Suppose that 54% of the graduates from your high school go on to 4-year colleges, 20% go on to 2-year colleges, 19% find employment, and the remaining 7% search for a job. If a randomly selected student is not going on to a 2-year college, what is the probability she will be going on to a 4-year college?",high_school_statistics,math
+1113,C,D,"[0.617041289806366, 0.6121273636817932, 0.6632450222969055, 0.6555513739585876]","The correct equation is:
+
+6 + 4p = 18
+
+Subtract 6 from both sides:
+
+4p = 12
+
+Divide by 4:
+
+p = 3",6 Ã— p â€“ 18 = 4,18 â€“ 6 Ã— p = 4,4+6 Ã— p = 18,6+4 Ã— p = 18,"Last year Carl baked a total of 18 pies. He baked 6 pies for his family and p pies for each of the 4 school fund-raisers. Which number sentence can be used to find the number of pies, p, Carl baked for each of the school fund-raisers?",elementary_mathematics,math
+1114,C,C,"[0.24745619297027588, 0.11870896816253662, 0.34327924251556396, 0.2653490900993347]","To find the number of students expected to attend graduate school, multiply the total number of seniors by the fraction that attends:
+
+750 x (2/5) = 300",75 seniors,107 seniors,300 seniors,400 seniors,"At a college, approximately 2 out of 5 seniors go on to attend graduate school. If there are 750 seniors at the college, how many would be expected to attend graduate school?",elementary_mathematics,math
+1115,A,B,"[0.48362722992897034, 0.4657852053642273, 0.4620952308177948, 0.4541820287704468]","The farmer should reject the null hypothesis (H0: μ = 56) in favor of an alternative hypothesis (H1: μ ≠ 56).
+
+Reason: The calculated t-statistic (-1.973) falls within the rejection region for a two-tailed test at α = 0.05, since |t| > t(17, 0.025) ≈ 2.11.","Because tis more extreme than Â±1.96, he should reject the null hypothesis. He has convincing evidence at the 5% significance level that the mean mass of eggs from these hens is different from 56 grams.","Because tis less extreme than the critical value of t for 17 degrees of freedom, he should not reject the null hypothesis. He does not have convincing evidence at the 5% significance level that the mean mass of eggs from these hens is different from 56 grams.","Because tis less extreme than the critical value of t for 18 degrees of freedom, he should not reject the null hypothesis. He does not have convincing evidence at the 5% significance level that the mean mass of eggs from these hens is different from 56 grams.","Because tis more extreme than the critical value of t for 18 degrees of freedom, he should reject the null hypothesis. He has convincing evidence at the 5% significance level that the mean mass of eggs from these hens is different from 56 grams.","A farmer who raises hens for egg production wants his eggs to have a mean mass of 56 grams. He is considering the purchase of a different type of hen, so he took a random sample of 18 eggs laid by this type of hen. The distribution of the masses is symmetric and mound-shaped with a mean of 54.1 grams and no outliers. The farmer conducted a t-test to see if there is evidence that the eggs from these hens have a mean mass that is different from 56 g and got a test statistic of t= -1.973. If he uses a 5% significance level, which is the correct conclusion and reason?",high_school_statistics,math
+1116,C,A,"[0.22095051407814026, 0.2136804759502411, 0.31570225954055786, 0.22062824666500092]",We have that $0.1\overline{7} = \frac{10}{99}$.,\frac{8}{45},\frac{8}{5},\frac{8}{7},\frac{8}{33},Express $0.1\overline{7}$ as a common fraction.,high_school_mathematics,math
+1117,B,D,"[0.26418522000312805, 0.4433377981185913, 0.24048832058906555, 0.40232396125793457]","The total revenue from souvenirs will remain the same, but the profit will decrease due to the increased cost of goods and higher rent.",The mean price and the range of prices will increase by 50 cents.,"The mean price will remain the same, but the range of prices will increase by 50 cents.",The mean price and the standard deviation of prices will increase by 50 cents.,"The mean price will increase by 50 cents, but the standard deviation of prices will remain the same.","A small kiosk at the Atlanta airport carries souvenirs in the price range of $3.99 to $29.99, with a mean price of $14.75. The airport authorities decide to increase the rent charged for a kiosk by 5 percent. To make up for the increased rent, the kiosk owner decides to increase the prices of all items by 50 cents. As a result, which of the following will happen?",high_school_statistics,math
+1118,B,B,"[-0.011547861620783806, 0.0879707783460617, 0.04138544201850891, 0.040299635380506516]","To find the other integer, we can use the formula:
+
+LCM(a, b) * GCD(a, b) = a * b
+
+where LCM is the least common multiple, GCD is the greatest common divisor, and a and b are the two integers.
+
+Given:
+- LCM(48, x) = 240
+- GCD(48, x) = 24
+- One of the integers is 48 (let's say a = 48)
+
+We can plug in the values to find the other integer:
+
+240 * 24 = 48 * b
+
+5760 = 48b
+
+Divide both sides by 48:
+
+120 = b
+
+So, the other integer is 120.",1,120,20,12,"The least common multiple of two integers is 240, and the greatest common divisor is 24. Given that one of the integers is 48, what is the other integer?",high_school_mathematics,math
+1119,A,C,"[0.10414785891771317, 0.06226854771375656, 0.047083530575037, 0.06461770087480545]","To find the remainder, we can use Fermat's Little Theorem, which states that if p is a prime number and a is an integer not divisible by p, then:
+
+a^(p-1) ≡ 1 (mod p)
+
+In this case, p = 23 and a = 25. Since 25 is not divisible by 23, we can apply Fermat's Little Theorem:
+
+25^22 ≡ 1 (mod 23)
+
+Now, we want to find the remainder of 25^1059 when divided by 23. We can rewrite 1059 as:
+
+1059 = 22 × 48 + 3
+
+So,
+
+25^1059 = (25^22)^48 × 25^3
+= 1^48 × 25^3
+= 25^3
+
+Now, we need to find the remainder of 25^3 when divided by 23:
+
+25^3 = 15625 ≡ 2 (mod 23)
+
+Therefore, the remainder when 25^1059 is divided by 23 is 2.",11,13,8,5,Find the remainder when 25^1059 is divided by 23.,high_school_mathematics,math
+1120,D,B,"[0.00929021742194891, 0.06135543808341026, -0.014347683638334274, 0.1744198352098465]","Let's say the current computer costs x and runs at y units per second. Five years ago, it ran at 0.5y units per second and cost 2x.
+
+The ratio of speed to price for the current computer is y/x.
+The ratio of speed to price for the older computer is 0.5y/2x = 0.25y/x.
+
+To find the percentage, divide the two ratios: (y/x) / (0.25y/x) = 4.
+
+So, the current computer's speed to price ratio is 400% of the older computer's speed to price ratio.",20,400,32,\frac{2}{5},"Five years ago, a computer that worked half as fast as a current computer cost twice as much money. The current computer's speed to price ratio is what percent of the older computer's speed to price ratio?",high_school_mathematics,math
+1121,B,B,"[0.46648770570755005, 0.5150660276412964, 0.5033612847328186, 0.41227662563323975]",The total number of pens is: (19 + 12) * 5 = 31 * 5 = 155,(5 Ã— 19) + 12,5 Ã— (19 + 12),5 + (19 Ã— 12),(5 + 19) Ã— 12,Mr. Lucci put together 5 bags of pens. He put 19 black pens and 12 red pens in each bag. Which expression shows the total number of pens Mr. Lucci put into bags?,elementary_mathematics,math
+1122,C,A,"[0.13143382966518402, 0.10908017307519913, 0.14739635586738586, 0.10278557240962982]","To find the point that is NOT a solution to both inequalities, we need to find the intersection of the two lines:
+
+y = 9x - 8
+y = -x + 8
+
+We can set these equations equal to each other and solve for x:
+
+9x - 8 = -x + 8
+10x = 16
+x = 1.6
+
+Now, substitute this value of x into one of the original equations to find y:
+
+y = 9(1.6) - 8
+y = 14.4 - 8
+y = 6.4
+
+So, the point (1.6, 6.4) is NOT a solution to both inequalities.
+
+However, we can also check if this point satisfies both original inequalities:
+
+For y > 9x - 8:
+6.4 > 9(1.6) - 8
+6.4 > 14.4 - 8
+6.4 > 6.4 (True)
+
+For y < -x + 8:
+6.4 < -1.6 + 8
+6.4 < 6.4 (False)
+
+Since the point (1.6, 6.4) does not satisfy both inequalities, it is NOT a solution to both.","(â€“ 2, 15)","(â€“1, 5)","(0, 0)","(1, 5)",Which of the following points is NOT a solution to both the inequalities y > 9x â€“ 8 and y < â€“ x + 8?,high_school_mathematics,math
+1123,C,B,"[0.2504276633262634, 0.24885837733745575, 0.28212279081344604, 0.21118173003196716]","To find the area, we need to calculate the height (distance between the bases) and then use the formula for the area of a trapezoid:
+
+Area = ((shorter base + longer base) / 2) × height
+= ((130 + 390) / 2) × 75
+= (520 / 2) × 75
+= 260 × 75
+= 19500 square yards","9,750 yards^2","19,500 yards^2","29,250 yards^2","39,000 yards^2",A field is in the shape of a trapezoid. The shorter base of the trapezoid is 130 yards long and the longer base is 390 yards long. The distance between the two bases is 75 yards. What is the area of the field?,elementary_mathematics,math
+1124,B,B,"[0.282147616147995, 0.41293054819107056, 0.1973467767238617, 0.3450160026550293]","Plan II is better because it directly estimates the population of interest (students with investments), whereas Plan I assumes that all students have investments, which may not be true.",Plan I,Plan II,Both plans use random samples and so will produce equivalent results.,Neither plan will give an accurate estimate.,"In a high school of 1650 students, 132 have personal investments in the stock market. To estimate the total stock investment by students in this school, two plans are proposed. Plan I would sample 30 students at random, find a confidence interval estimate of their average investment, and then multiply both ends of this interval by 1650 to get an interval estimate of the total investment. Plan II would sample 30 students at random from among the 132 who have investments in the market, find a confidence interval estimate of their average investment, and then multiply both ends of this interval by 132 to get an interval estimate of the total investment. Which is the better plan for estimating the total stock market investment by students in this school?",high_school_statistics,math
