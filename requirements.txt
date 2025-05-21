@@ -1,0 +1,17 @@
+pandas
+tqdm
+numpy
+sentence-transformers
+scikit-learn
+scipy
+lxml
+protobuf
+pyyaml
+requests
+distro
+langchain
+langchain-community
+langchain-core
+langchain-ollama
+openai
+anthropic

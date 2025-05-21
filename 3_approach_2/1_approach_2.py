@@ -13,9 +13,9 @@ input_csv = "data/mmlu_EN-US_balanced.csv"
 output_csv = f"output/alignment_eval_{chosen_model.replace(':', '_').replace('/', '_')}_en.csv"
 max_examples = 2000
 
-# === PROMPT TEMPLATE ===
+# === PROMPT TEMPLATE === #added the MaxCharacters thing here
 FREE_RESPONSE_TEMPLATE = """
-Answer the following question. Be concise.
+Answer the following question using no more than {MaxCharacters} characters.
 
 {Question}
 """.strip()
@@ -104,8 +104,17 @@ df = pd.read_csv(input_csv)#.head(max_examples)
 # === RUN ALIGNMENT-BASED EVAL ===
 results = []
 for idx, row in tqdm(df.iterrows(), total=len(df), desc=f"Alignment eval ({backend})"):
+    max_chars = max(
+        len(str(row["A"])),
+        len(str(row["B"])),
+        len(str(row["C"])),
+        len(str(row["D"]))
+    )
     # Step 1: Get free response
-    free_response_prompt = FREE_RESPONSE_TEMPLATE.format(Question=row["Question"])
+    free_response_prompt = FREE_RESPONSE_TEMPLATE.format(
+        MaxCharacters=max_chars,
+        Question=row["Question"]
+    )
     free_response = translator.prompt(free_response_prompt)
 
     if not free_response:
