@@ -1,4 +1,3 @@
-
 import os
 import re
 import pandas as pd
@@ -9,8 +8,8 @@ backend = "ollama"  # options: "openai", "anthropic", "ollama"
 chosen_model = "mistral-small"
 open_ai_api_key = ""
 anthropic_api_key = ""
-input_csv = "data/mmlu_EN-US_balanced.csv"
-output_csv = f"output/order_bias_{chosen_model.replace(':', '_').replace('/', '_')}_dir_en.csv"
+input_csv = "data/new_0.459_alignment_eval_mistral-small_en.csv"
+output_csv = f"output/new_0.459_order_bias_{chosen_model.replace(':', '_').replace('/', '_')}_cot_en.csv"
 error_log_path = "output/3errors.txt"
 max_examples = 2000
 save_every = 200
@@ -20,7 +19,7 @@ print(chosen_model)
 
 # === PROMPT TEMPLATE ===
 QUERY_TEMPLATE = """
-Answer the following multiple choice question. The last line of your response should be of the following format: 'Answer: $LETTER' (without quotes) where LETTER is one of ABCD.
+Answer the following multiple choice question. The last line of your response should be of the following format: 'Answer: $LETTER' (without quotes) where LETTER is one of ABCD. Think step by step before answering.
 
 {Question}
 
@@ -144,7 +143,7 @@ else:
 
 # === RUN ORDER-BIAS EVAL ===
 for idx, row in tqdm(df.iterrows(), total=len(df), desc=f"Order-bias eval ({backend})"):
-    orig_correct = row["Answer"].strip()
+    orig_correct = row["CorrectAnswer"].strip()
     correct_text = row[orig_correct]
     other_labels = [l for l in ["A", "B", "C", "D"] if l != orig_correct]
     other_texts = [row[l] for l in other_labels]

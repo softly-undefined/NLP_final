@@ -15,7 +15,7 @@ max_examples = 2000
 
 # === PROMPT TEMPLATE === #added the MaxCharacters thing here
 FREE_RESPONSE_TEMPLATE = """
-Answer the following question using no more than {MaxCharacters} characters.
+Answer the following question. Be concise.
 
 {Question}
 """.strip()
@@ -112,7 +112,6 @@ for idx, row in tqdm(df.iterrows(), total=len(df), desc=f"Alignment eval ({backe
     )
     # Step 1: Get free response
     free_response_prompt = FREE_RESPONSE_TEMPLATE.format(
-        MaxCharacters=max_chars,
         Question=row["Question"]
     )
     free_response = translator.prompt(free_response_prompt)
