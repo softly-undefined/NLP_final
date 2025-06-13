@@ -1,0 +1,2 @@
+overall_accuracy,accuracy_A,accuracy_B,accuracy_C,accuracy_D,RSD,recall_A,recall_B,recall_C,recall_D,RStd,FluctuationRate
+0.69,0.67,0.7,0.7,0.69,0.01774992567234182,0.67,0.7,0.7,0.69,0.012247448713915856,0.6475
