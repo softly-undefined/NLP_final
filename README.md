@@ -1,5 +1,4 @@
-# NLP_Final Project (we should think of a name for the paper!)
-Cognitive Alignment: Reducing Order Bias in MCQ Answering
+# Cognitive Alignment: Reducing Order Bias in MCQ Answering
 
 ## 1_Data Cleaning:
 This directory contains the original datasets used (MMLU datasets from OpenAI), as well as cleaning.ipynb, in which the cleaning process was conducted. The final datasets which will continue to be used are in 'mmlu_EN-US_balanced.csv' and 'mmlu_CH-ZH_balanced.csv' 
