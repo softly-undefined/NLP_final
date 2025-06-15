@@ -1,0 +1,89 @@
+% Use this file for citations not found in the ACL Anthology (contained in "anthology.bib").
+
+@article{hendryckstest2021,
+  title={Measuring Massive Multitask Language Understanding},
+  author={Dan Hendrycks and Collin Burns and Steven Basart and Andy Zou and Mantas Mazeika and Dawn Song and Jacob Steinhardt},
+  journal={Proceedings of the International Conference on Learning Representations (ICLR)},
+  year={2021}
+}
+
+@article{OpenAI2024-em,
+  title        = {GPT-4o System Card},
+  author       = {OpenAI: Aaron Hurst and Adam Lerer and Adam P. Goucher and Adam Perelman and Aditya Ramesh and Aidan Clark and AJ Ostrow and Akila Welihinda and Alan Hayes and et al.},
+  journal      = {arXiv preprint},
+  year         = {2024},
+  primaryClass = {cs.CL},
+  eprint       = {2410.21276},
+  url          ={https://doi.org/10.48550/arXiv.2410.21276}
+}
+
+@misc{mistral_small_24b_2025,
+  title        = {Mistral Small 3 (24B)},
+  author       = {{Mistral AI}},
+  year         = {2025},
+  howpublished = {\url{https://ollama.com/library/mistral-small}},
+  note         = {Accessed via \texttt{mistral-small:latest}, which pointed to version 24B at time of use}
+}
+
+@article{kojima2022large,
+  title={Large Language Models are Zero-Shot Reasoners},
+  author={Kojima, Takeshi and Gu, Shixiang and Reid, Machel and Yao, Yujia and Schuurmans, Dale},
+  journal={arXiv preprint arXiv:2205.11916},
+  year={2022}
+}
+
+@article{pezeshkpour2023optionorder,
+  title={Large Language Models Sensitivity to The Order of Options in Multiple-Choice Questions},
+  author={Pezeshkpour, Pouya and Hruschka, Estevam},
+  journal={arXiv preprint arXiv:2308.11483},
+  year={2023},
+  url={https://arxiv.org/abs/2308.11483}
+}
+
+@inproceedings{reif-schwartz-2024-beyond,
+    title = "Beyond Performance: Quantifying and Mitigating Label Bias in {LLM}s",
+    author = "Reif, Yuval  and
+      Schwartz, Roy",
+    editor = "Duh, Kevin  and
+      Gomez, Helena  and
+      Bethard, Steven",
+    booktitle = "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+    month = jun,
+    year = "2024",
+    address = "Mexico City, Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.naacl-long.378/",
+    doi = "10.18653/v1/2024.naacl-long.378",
+    pages = "6784--6798",
+    abstract = "Large language models (LLMs) have shown remarkable adaptability to diverse tasks, by leveraging context prompts containing instructions, or minimal input-output examples. However, recent work revealed they also exhibit *label bias*{---}an undesirable preference toward predicting certain answers over others. Still, detecting and measuring this bias reliably and at scale has remained relatively unexplored. In this study, we evaluate different approaches to quantifying label bias in a model{'}s predictions, conducting a comprehensive investigation across 279 classification tasks and ten LLMs. Our investigation reveals substantial label bias in models both before and after debiasing attempts, as well as highlights the importance of outcomes-based evaluation metrics, which were not previously used in this regard. We further propose a novel label bias calibration method tailored for few-shot prompting, which outperforms recent calibration approaches for both improving performance and mitigating label bias. Our results emphasize that label bias in the predictions of LLMs remains a barrier to their reliability."
+}
+
+@misc{zheng2024largelanguagemodelsrobust,
+      title={Large Language Models Are Not Robust Multiple Choice Selectors}, 
+      author={Chujie Zheng and Hao Zhou and Fandong Meng and Jie Zhou and Minlie Huang},
+      year={2024},
+      eprint={2309.03882},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2309.03882}, 
+}
+
+@inproceedings{wei-etal-2024-unveiling,
+    title = "Unveiling Selection Biases: Exploring Order and Token Sensitivity in Large Language Models",
+    author = "Wei, Sheng-Lun  and
+      Wu, Cheng-Kuang  and
+      Huang, Hen-Hsen  and
+      Chen, Hsin-Hsi",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2024",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-acl.333/",
+    doi = "10.18653/v1/2024.findings-acl.333",
+    pages = "5598--5621",
+    abstract = "In this paper, we investigate the phenomena of ``selection biases'' in Large Language Models (LLMs), focusing on problems where models are tasked with choosing the optimal option from an ordered sequence. We delve into biases related to option order and token usage, which significantly impact LLMs' decision-making processes. We also quantify the impact of these biases through an extensive empirical analysis across multiple models and tasks. Furthermore, we propose mitigation strategies to enhance model performance. Our key contributions are threefold: 1) Precisely quantifying the influence of option order and token on LLMs, 2) Developing strategies to mitigate the impact of token and order sensitivity to enhance robustness, and 3) Offering a detailed analysis of sensitivity across models and tasks, which informs the creation of more stable and reliable LLM applications for selection problems."
+}

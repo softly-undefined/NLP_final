@@ -1,0 +1,6 @@
+\section{Introduction}
+\label{sec:intro}
+
+Large Language Models (LLMs) have shown immense promise in solving multiple choice questions in a zero-shot fashion \citep{kojima2022large}. However, LLMs have also shown to exhibit biases across answer choice order. Order bias refers to the phenomenon in which a model's response is influenced not by the semantic content of each answer, but by its position in the list. 
+Recent work by \citet{pezeshkpour2023optionorder} demonstrates that reordering options in multiple-choice questions can lead to substantial variation in accuracy—up to 75\% for GPT-4—indicating that current LLMs may not be as objective or consistent as expected, especially in zero- or few-shot evaluation settings.
+To systematically evaluate order bias, we compile a bilingual MCQ dataset spanning 17 knowledge domains following the categorization of \citet{hendryckstest2021}. After removing inconsistent examples across languages, we obtain 1,700 English-Chinese aligned question pairs. We evaluate zero-shot prompting techniques using state-of-the-art LLMs including GPT-4o and mistral-small, comparin Chain-of-Thought(CoT) and Direct Prompting against our proposed novel method.

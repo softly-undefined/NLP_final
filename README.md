@@ -21,3 +21,6 @@ The resultant CA-Adjusted datasets are then used in '2_order_bias' to generate o
 
 ## 5_Analysis
 This directory contains the code to calculate the RSD, RStd, and Fluctuation Rate metrics identified in the paper. The generation of metrics is located in 'metricproducer.py', the outputs of multiple files are created in 'outputcompilation.py,' and as usual the data is located in 'data' and ouput in 'output.'
+
+## 6_Overleaf
+This directory contains the overleaf .tex files that created the final pdf version of the project, as well as the final pdf of the project.

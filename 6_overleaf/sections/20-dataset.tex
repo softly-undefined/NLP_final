@@ -1,0 +1,11 @@
+\section{Test Set}
+\label{sec:dataset}
+
+For this experiment, we use both English and Chinese versions of the MMLU data set introduced in \citet{hendryckstest2021}. For Chinese, we use a translated version of the benchmark made available by OpenAI at \url{https://openaipublic.blob.core.windows.net/simple-evals/mmlu_ZH-CN.csv}. Throughout the cleaning process we preserve row alignment between the two languages to ensure identical questions are being considered.
+
+\subsection{Data Cleaning}
+
+
+A total of 176 rows of our bilingual dataset were found to have different correct answer values for the two languages, which were removed to reduce complexity.
+
+We next divide the data set into subcategories following the structure in \citet{hendryckstest2021}. The subcategories are as follows: biology, business, chemistry, computer science, culture, economics, engineering, geography, health, history, law, math, other, philosophy, physics, politics, and psychology. From each subcategory, we sample 100 aligned English-Chinese question pairs, resulting in a total of 1,700 questions.

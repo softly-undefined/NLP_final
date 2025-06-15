@@ -1,0 +1,121 @@
+\setlength{\tabcolsep}{4pt}
+{\footnotesize
+\begin{longtable}{|l|cc|cc|cc|cc|}
+\caption{Evaluation of models across English and Mandarin on Overall Accuracy, Relative Standard Deviation (RSD), Recall Standard Deviation (RStd), and Fluctuation Rate (FR). For RSD, RStd, and FR lower scores indicate better stability and less sensitivity to answer order permutations.}
+\label{tab:order_bias_results}
+\hline
+ & \multicolumn{2}{c|}{\textbf{Overall Accuracy}} & \multicolumn{2}{c|}{\textbf{RSD}} & \multicolumn{2}{c|}{\textbf{RStd}} & \multicolumn{2}{c|}{\textbf{Fluctuation Rate}} \\
+\hline
+\multicolumn{1}{|l|}{\textbf{Method}} & \textbf{English} & \textbf{Chinese} & \textbf{English} & \textbf{Chinese} & \textbf{English} & \textbf{Chinese} & \textbf{English} & \textbf{Chinese} \\
+\hline
+\endfirsthead
+\hline
+ & \multicolumn{2}{c|}{\textbf{Overall Accuracy}} & \multicolumn{2}{c|}{\textbf{RSD}} & \multicolumn{2}{c|}{\textbf{RStd}} & \multicolumn{2}{c|}{\textbf{Fluctuation Rate}} \\
+\hline
+\multicolumn{1}{|l|}{\textbf{Method}} & \textbf{English} & \textbf{Chinese} & \textbf{English} & \textbf{Chinese} & \textbf{English} & \textbf{Chinese} & \textbf{English} & \textbf{Chinese} \\
+\hline
+\endlastfoot
+\multicolumn{9}{|c|}{\textbf{Biology}} \\
+\hline
+\multicolumn{1}{|l|}{\textbf{gpt-4o}} & \textbf{0.920000} & \textbf{0.910000} & 0.015370 & \textbf{0.020560} & 0.014140 & \textbf{0.018710} & \textbf{0.707500} & 0.710000 \\
+\multicolumn{1}{|l|}{\textbf{mistral-small\_cot}} & 0.900000 & 0.872500 & 0.011110 & 0.023450 & 0.010000 & 0.020460 & 0.712500 & 0.685000 \\
+\multicolumn{1}{|l|}{\textbf{CA-0.2 mistral-small\_cot}} & 0.837500 & 0.772500 & \textbf{0.005170} & 0.043300 & \textbf{0.004330} & 0.033450 & \textbf{0.707500} & \textbf{0.667500} \\
+\hline
+\multicolumn{9}{|c|}{\textbf{Business}} \\
+\hline
+\multicolumn{1}{|l|}{\textbf{gpt-4o}} & \textbf{0.837500} & \textbf{0.875000} & 0.017660 & \textbf{0.020600} & 0.014790 & 0.018030 & \textbf{0.677500} & 0.700000 \\
+\multicolumn{1}{|l|}{\textbf{mistral-small\_cot}} & 0.850000 & 0.790000 & 0.008320 & 0.042930 & 0.007070 & 0.033910 & 0.682500 & \textbf{0.670000} \\
+\multicolumn{1}{|l|}{\textbf{CA-0.2 mistral-small\_cot}} & 0.840000 & 0.762500 & \textbf{0.000000} & 0.023410 & \textbf{0.000000} & \textbf{0.017850} & 0.690000 & 0.672500 \\
+\hline
+\multicolumn{9}{|c|}{\textbf{Chemistry}} \\
+\hline
+\multicolumn{1}{|l|}{\textbf{gpt-4o}} & \textbf{0.825000} & \textbf{0.830000} & \textbf{0.018180} & \textbf{0.014760} & \textbf{0.015000} & \textbf{0.012250} & 0.710000 & 0.705000 \\
+\multicolumn{1}{|l|}{\textbf{mistral-small\_cot}} & 0.720000 & 0.700000 & 0.038040 & 0.039120 & 0.027390 & 0.027390 & 0.672500 & 0.662500 \\
+\multicolumn{1}{|l|}{\textbf{CA-0.2 mistral-small\_cot}} & 0.647500 & 0.662500 & 0.036830 & 0.028990 & 0.023850 & 0.019200 & \textbf{0.660000} & \textbf{0.657500} \\
+\hline
+\multicolumn{9}{|c|}{\textbf{Computer science}} \\
+\hline
+\multicolumn{1}{|l|}{\textbf{gpt-4o}} & \textbf{0.882500} & \textbf{0.885000} & \textbf{0.016760} & 0.025890 & \textbf{0.014790} & 0.022910 & 0.712500 & 0.725000 \\
+\multicolumn{1}{|l|}{\textbf{mistral-small\_cot}} & 0.790000 & 0.740000 & 0.023680 & 0.039400 & 0.018710 & 0.029150 & 0.672500 & \textbf{0.667500} \\
+\multicolumn{1}{|l|}{\textbf{CA-0.2 mistral-small\_cot}} & 0.770000 & 0.727500 & 0.027550 & \textbf{0.024540} & 0.021210 & \textbf{0.017850} & \textbf{0.662500} & 0.677500 \\
+\hline
+\multicolumn{9}{|c|}{\textbf{Culture}} \\
+\hline
+\multicolumn{1}{|l|}{\textbf{gpt-4o}} & 0.847500 & \textbf{0.915000} & \textbf{0.009780} & \textbf{0.039020} & \textbf{0.008290} & 0.035710 & 0.717500 & 0.702500 \\
+\multicolumn{1}{|l|}{\textbf{mistral-small\_cot}} & \textbf{0.862500} & 0.810000 & 0.033180 & 0.057240 & 0.028610 & 0.046370 & 0.702500 & 0.687500 \\
+\multicolumn{1}{|l|}{\textbf{CA-0.2 mistral-small\_cot}} & 0.827500 & 0.700000 & 0.021580 & 0.050510 & 0.017850 & \textbf{0.035360} & \textbf{0.692500} & \textbf{0.670000} \\
+\hline
+\multicolumn{9}{|c|}{\textbf{Economics}} \\
+\hline
+\multicolumn{1}{|l|}{\textbf{gpt-4o}} & \textbf{0.872500} & \textbf{0.907500} & 0.029640 & 0.032480 & 0.025860 & 0.029470 & 0.712500 & 0.720000 \\
+\multicolumn{1}{|l|}{\textbf{mistral-small\_cot}} & 0.832500 & 0.742500 & \textbf{0.026010} & \textbf{0.025860} & \textbf{0.021650} & \textbf{0.019200} & 0.707500 & 0.695000 \\
+\multicolumn{1}{|l|}{\textbf{CA-0.2 mistral-small\_cot}} & 0.780000 & 0.732500 & 0.028670 & 0.031090 & 0.022360 & 0.022780 & \textbf{0.682500} & \textbf{0.692500} \\
+\hline
+\multicolumn{9}{|c|}{\textbf{Engineering}} \\
+\hline
+\multicolumn{1}{|l|}{\textbf{gpt-4o}} & \textbf{0.785000} & \textbf{0.827500} & 0.052910 & 0.053620 & 0.041530 & 0.044370 & 0.667500 & 0.695000 \\
+\multicolumn{1}{|l|}{\textbf{mistral-small\_cot}} & 0.762500 & 0.687500 & 0.043870 & 0.086280 & 0.033450 & 0.059320 & 0.650000 & 0.640000 \\
+\multicolumn{1}{|l|}{\textbf{CA-0.2 mistral-small\_cot}} & 0.680000 & 0.622500 & \textbf{0.040270} & \textbf{0.048690} & \textbf{0.027390} & \textbf{0.030310} & \textbf{0.625000} & \textbf{0.635000} \\
+\hline
+\multicolumn{9}{|c|}{\textbf{Health}} \\
+\hline
+\multicolumn{1}{|l|}{\textbf{gpt-4o}} & \textbf{0.807500} & \textbf{0.815000} & 0.045820 & \textbf{0.020350} & 0.037000 & \textbf{0.016580} & 0.687500 & 0.695000 \\
+\multicolumn{1}{|l|}{\textbf{mistral-small\_cot}} & 0.770000 & 0.740000 & 0.037860 & 0.054890 & 0.029150 & 0.040620 & 0.652500 & 0.625000 \\
+\multicolumn{1}{|l|}{\textbf{CA-0.2 mistral-small\_cot}} & 0.735000 & 0.667500 & \textbf{0.036630} & 0.061200 & \textbf{0.026930} & 0.040850 & \textbf{0.650000} & \textbf{0.602500} \\
+\hline
+\multicolumn{9}{|c|}{\textbf{History}} \\
+\hline
+\multicolumn{1}{|l|}{\textbf{gpt-4o}} & \textbf{0.885000} & \textbf{0.920000} & \textbf{0.024630} & \textbf{0.007690} & 0.021790 & \textbf{0.007070} & 0.717500 & 0.725000 \\
+\multicolumn{1}{|l|}{\textbf{mistral-small\_cot}} & 0.830000 & 0.770000 & 0.025560 & 0.042080 & 0.021210 & 0.032400 & 0.707500 & \textbf{0.680000} \\
+\multicolumn{1}{|l|}{\textbf{CA-0.2 mistral-small\_cot}} & 0.775000 & 0.735000 & 0.026600 & 0.020410 & \textbf{0.020620} & 0.015000 & \textbf{0.697500} & 0.697500 \\
+\hline
+\multicolumn{9}{|c|}{\textbf{Geography}} \\
+\hline
+\multicolumn{1}{|l|}{\textbf{gpt-4o}} & \textbf{0.882500} & \textbf{0.907500} & 0.040360 & \textbf{0.004770} & 0.035620 & \textbf{0.004330} & 0.702500 & 0.732500 \\
+\multicolumn{1}{|l|}{\textbf{mistral-small\_cot}} & 0.842500 & 0.772500 & 0.038800 & 0.055960 & 0.032690 & 0.043230 & \textbf{0.690000} & 0.677500 \\
+\multicolumn{1}{|l|}{\textbf{CA-0.2 mistral-small\_cot}} & 0.842500 & 0.725000 & \textbf{0.034980} & 0.062830 & \textbf{0.029470} & 0.045550 & 0.695000 & \textbf{0.657500} \\
+\hline
+\multicolumn{9}{|c|}{\textbf{Law}} \\
+\hline
+\multicolumn{1}{|l|}{\textbf{gpt-4o}} & \textbf{0.675000} & \textbf{0.747500} & \textbf{0.055920} & \textbf{0.043730} & \textbf{0.037750} & \textbf{0.032690} & 0.667500 & 0.670000 \\
+\multicolumn{1}{|l|}{\textbf{mistral-small\_cot}} & 0.622500 & 0.520000 & 0.077350 & 0.129720 & 0.048150 & 0.067450 & 0.625000 & 0.620000 \\
+\multicolumn{1}{|l|}{\textbf{CA-0.2 mistral-small\_cot}} & 0.562500 & 0.417500 & 0.078880 & 0.099300 & 0.044370 & 0.041460 & \textbf{0.610000} & \textbf{0.592500} \\
+\hline
+\multicolumn{9}{|c|}{\textbf{Math}} \\
+\hline
+\multicolumn{1}{|l|}{\textbf{gpt-4o}} & \textbf{0.917500} & \textbf{0.927500} & 0.009040 & \textbf{0.008940} & 0.008290 & \textbf{0.008290} & 0.722500 & 0.727500 \\
+\multicolumn{1}{|l|}{\textbf{mistral-small\_cot}} & 0.802500 & 0.775000 & 0.010330 & 0.049560 & 0.008290 & 0.038410 & \textbf{0.645000} & 0.630000 \\
+\multicolumn{1}{|l|}{\textbf{CA-0.2 mistral-small\_cot}} & 0.792500 & 0.775000 & \textbf{0.005460} & 0.042310 & \textbf{0.004330} & 0.032790 & \textbf{0.645000} & \textbf{0.627500} \\
+\hline
+\multicolumn{9}{|c|}{\textbf{Philosophy}} \\
+\hline
+\multicolumn{1}{|l|}{\textbf{gpt-4o}} & \textbf{0.807500} & \textbf{0.847500} & 0.022110 & \textbf{0.021070} & 0.017850 & \textbf{0.017850} & 0.700000 & 0.715000 \\
+\multicolumn{1}{|l|}{\textbf{mistral-small\_cot}} & 0.755000 & 0.665000 & 0.023880 & 0.093610 & 0.018030 & 0.062250 & \textbf{0.652500} & \textbf{0.595000} \\
+\multicolumn{1}{|l|}{\textbf{CA-0.2 mistral-small\_cot}} & 0.715000 & 0.622500 & \textbf{0.015640} & 0.090430 & \textbf{0.011180} & 0.056290 & \textbf{0.652500} & \textbf{0.595000} \\
+\hline
+\multicolumn{9}{|c|}{\textbf{Physics}} \\
+\hline
+\multicolumn{1}{|l|}{\textbf{gpt-4o}} & \textbf{0.910000} & \textbf{0.932500} & \textbf{0.015540} & \textbf{0.019150} & \textbf{0.014140} & \textbf{0.017850} & 0.722500 & 0.730000 \\
+\multicolumn{1}{|l|}{\textbf{mistral-small\_cot}} & 0.817500 & 0.760000 & 0.031630 & 0.026320 & 0.025860 & 0.020000 & 0.672500 & 0.667500 \\
+\multicolumn{1}{|l|}{\textbf{CA-0.2 mistral-small\_cot}} & 0.732500 & 0.687500 & 0.027940 & 0.027930 & 0.020460 & 0.019200 & \textbf{0.655000} & \textbf{0.662500} \\
+\hline
+\multicolumn{9}{|c|}{\textbf{Politics}} \\
+\hline
+\multicolumn{1}{|l|}{\textbf{gpt-4o}} & \textbf{0.820000} & \textbf{0.867500} & 0.039520 & 0.022140 & 0.032400 & 0.019200 & 0.692500 & 0.710000 \\
+\multicolumn{1}{|l|}{\textbf{mistral-small\_cot}} & 0.820000 & 0.750000 & 0.033400 & 0.049890 & 0.027390 & 0.037420 & 0.685000 & 0.655000 \\
+\multicolumn{1}{|l|}{\textbf{CA-0.2 mistral-small\_cot}} & 0.797500 & 0.690000 & \textbf{0.028560} & \textbf{0.017750} & \textbf{0.022780} & \textbf{0.012250} & \textbf{0.682500} & \textbf{0.647500} \\
+\hline
+\multicolumn{9}{|c|}{\textbf{Psychology}} \\
+\hline
+\multicolumn{1}{|l|}{\textbf{gpt-4o}} & \textbf{0.875000} & \textbf{0.952500} & 0.018950 & \textbf{0.013640} & 0.016580 & \textbf{0.012990} & 0.700000 & 0.735000 \\
+\multicolumn{1}{|l|}{\textbf{mistral-small\_cot}} & \textbf{0.875000} & 0.820000 & \textbf{0.012780} & 0.028600 & \textbf{0.011180} & 0.023450 & 0.702500 & \textbf{0.687500} \\
+\multicolumn{1}{|l|}{\textbf{CA-0.2 mistral-small\_cot}} & 0.807500 & 0.785000 & 0.016090 & 0.026260 & 0.012990 & 0.020620 & \textbf{0.687500} & \textbf{0.687500} \\
+\hline
+\multicolumn{9}{|c|}{\textbf{Other}} \\
+\hline
+\multicolumn{1}{|l|}{\textbf{gpt-4o}} & 0.887500 & \textbf{0.940000} & 0.012280 & \textbf{0.007520} & 0.010900 & \textbf{0.007070} & \textbf{0.702500} & 0.725000 \\
+\multicolumn{1}{|l|}{\textbf{mistral-small\_cot}} & \textbf{0.907500} & 0.812500 & 0.012010 & 0.040240 & 0.010900 & 0.032690 & 0.715000 & 0.687500 \\
+\multicolumn{1}{|l|}{\textbf{CA-0.2 mistral-small\_cot}} & 0.890000 & 0.785000 & \textbf{0.007950} & 0.051350 & \textbf{0.007070} & 0.040310 & 0.715000 & \textbf{0.682500} \\
+\hline
+\end{longtable}
+}
